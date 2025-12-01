@@ -1,0 +1,29 @@
+{
+  "name": "go-ham-pro",
+  "version": "1.0.0",
+  "description": "GO HAM PRO - Professional Service Booking Platform",
+  "scripts": {
+    "install:all": "cd client && npm install && cd ../server && npm install",
+    "dev:client": "cd client && npm start",
+    "dev:server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "test": "cd client && npm test && cd ../server && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/go-ham-pro"
+  },
+  "keywords": [
+    "booking",
+    "service",
+    "pressure-washing",
+    "mobile-detailing"
+  ],
+  "author": "GO HAM PRO",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
